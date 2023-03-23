@@ -30,7 +30,6 @@ app.post("/:action", (req,res) => {
         } else {
             res.sendFile(path.join(__dirname,"public","noCompanyList.xml"));
         }
-        //res.sendFile("./public/singleCompanyList.xml");
     } else {
         res.sendFile(path.join(__dirname,"public","noCompanyList.xml"));
     }
